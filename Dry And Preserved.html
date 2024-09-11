@@ -36,36 +36,7 @@
           transition: background-color 0.5s ease;
         }
 
-        /* Style for the toggle button */
-        .toggle-button {
-            position: absolute;
-            top: 65px;
-            /* right: 20px; */
-            width: 50px;
-            height: 20px;
-            background-color: #ccc;
-            border-radius: 30px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .toggle-button .toggle-circle {
-            width: 20px;
-            height: 20px;
-            background-color: #131518;
-            border-radius: 50%;
-            position: relative;
-            transition: transform 0.3s ease;
-        }
-
-        /* When the toggle is active */
-        .toggle-button.active {
-            background-color:#fff3e0;
-        }
-
-        .toggle-button.active .toggle-circle {
-            transform: translateX(30px); /* Move the circle to the right */
-        }
+        
         .dropdown-toggle:hover{
           color:white;
           text-shadow:1px 0px 0px black;
@@ -183,11 +154,7 @@
             <li><a class="btn btn-outline-dark  rounded-pill d-none d-sm-block d-md-block d-lg-block" href="Sign Up.html">Sign Up</a></li>
             <li><a class="btn btn-outline-dark my-sm-2 my-lg-0  rounded-pill mx-sm-0 mx-lg-2  d-block d-sm-none d-md-none d-lg-block" href="ContactUs.html">Contact Us</a></li>
                
-        <li class="mx-4 d-sm-none d-none d-sm-none d-md-none d-lg-block">
-          <div class="toggle-button  " id="toggleButton" >
-          <div class="toggle-circle  " ></div>
-      </div>
-    </li>
+       
       </ul></div>
     
     </div>
@@ -533,17 +500,6 @@
 
   
 
-const toggleButton = document.getElementById('toggleButton');
-    const body = document.body;
-
-    toggleButton.addEventListener('click', function () {
-        toggleButton.classList.toggle('active'); // Toggle the active class on the button
-        if (toggleButton.classList.contains('active')) {
-            body.style.backgroundColor = '#cfdfdc'; // Change background to green
-        } else {
-            body.style.backgroundColor = '#f0f0f0'; // Change background to initial color
-        }
-    });
 
     let cartCount = 0;
         const cartButton = document.getElementById('cartButton');
